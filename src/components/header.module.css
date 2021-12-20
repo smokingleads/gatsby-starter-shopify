@@ -33,7 +33,7 @@
 
 @media (min-width: 640px) {
   .header {
-    grid-template-areas: "logo searchButton cartButton";
+    grid-template-areas: "logo navHeader searchButton cartButton";
   }
 }
 
