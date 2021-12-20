@@ -32,7 +32,7 @@ function Hero (props) {
           <p className={callToAction}>
             Find your own custom list by searching for your ideal customer here
           
-            <a href="/pages/search">
+            <a href="/search">
               <img
                 src="https://www.sharpstonegrinders.com/product_images/uploaded_images/search-now-png-icon.png"
                 alt="Search for your ideal customer"
