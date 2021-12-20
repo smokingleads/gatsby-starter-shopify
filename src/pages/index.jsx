@@ -30,11 +30,11 @@ function Hero (props) {
             to help you reach your ideal customers on scale.
           </p>
           <p className={callToAction}>
-            Find your own custom list by searching for your ideal customer here
+            Find your own custom list by searching our data for your ideal customers
           
             <a href="/search">
               <img
-                src="https://iconarchive.com/download/i91972/icons8/windows-8/Users-Find-User.ico"
+                src="https://smokingleads.io/find_your_ideal_customers.png"
                 alt="Search for your ideal customer"
                 className={deployButton}
               />
