@@ -22,20 +22,19 @@ export const query = graphql`
 function Hero (props) {
   return (
     <div className={container}>
-      <h1 className={intro}>Welcome to Smokingleads.</h1>
+      <h1 className={intro}>Welcome to Smokingleads. Your one stop shop for email lists.</h1>
       {!!process.env.GATSBY_DEMO_STORE && (
         <>
           <p className={callOut}>
-            It's a website to provide you custom leads without the price tag. Search for your ideal customer right now.
+            It's a custom email list site, with 1k lists and 3k variants
+            to help you get the contacts you want without breaking the bank.
           </p>
           <p className={callToAction}>
-            Hook it up to your own Shopify store data and start customizing in
-            minutes by deploying it to Gatsby Cloud for free. Grab your Shopify
-            store credentials and
-            <a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-shopify&utm_campaign=shopify-starter">
+            Find a list of your ideal customers here.
+            <a href="/pages/search">
               <img
                 src="https://www.gatsbyjs.com/deploynow.png"
-                alt="Deploy to Gatsby Cloud"
+                alt="Search"
                 className={deployButton}
               />
             </a>
@@ -50,7 +49,27 @@ export default function IndexPage({ data }) {
   return (
     <Layout>
       <Hero />
-      <ProductListing products={data?.shopifyCollection?.products} />
+      <div className={container}>
+      <h1 className={intro}>Welcome to Smokingleads. Your one stop shop for email lists.</h1>
+      {!!process.env.GATSBY_DEMO_STORE && (
+        <>
+          <p className={callOut}>
+            It's a custom email list site, with 1k lists and 3k variants
+            to help you get the contacts you want without breaking the bank.
+          </p>
+          <p className={callToAction}>
+            Find a list of your ideal customers here.
+            <a href="/pages/search">
+              <img
+                src="https://www.gatsbyjs.com/deploynow.png"
+                alt="Search"
+                className={deployButton}
+              />
+            </a>
+          </p>
+        </>
+      )}
+    </div>
     </Layout>
   )
 }
