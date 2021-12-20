@@ -34,8 +34,8 @@ function Hero (props) {
           
             <a href="/pages/search">
               <img
-                src="/icons/search.jsx"
-                alt="Deploy to Gatsby Cloud"
+                src="https://www.sharpstonegrinders.com/product_images/uploaded_images/search-now-png-icon.png"
+                alt="Search for your ideal customer"
                 className={deployButton}
               />
             </a>
