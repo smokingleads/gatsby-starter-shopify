@@ -34,7 +34,7 @@ function Hero (props) {
           
             <a href="/search">
               <img
-                src="https://smokingleads.io/searchNow.png"
+                src="https://iconarchive.com/download/i91972/icons8/windows-8/Users-Find-User.ico"
                 alt="Search for your ideal customer"
                 className={deployButton}
               />
