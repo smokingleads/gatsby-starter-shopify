@@ -22,25 +22,26 @@ export const query = graphql`
 function Hero (props) {
   return (
     <div className={container}>
-      <h1 className={intro}>Welcome to Smokingleads. Your one stop shop for email lists.</h1>
-      {!!process.env.GATSBY_DEMO_STORE && (
+      <h1 className={intro}>Welcome to Smokingleads.</h1>
+      
         <>
           <p className={callOut}>
-            It's a custom email list site, with 1k lists and 3k variants
-            to help you get the contacts you want without breaking the bank.
+            We are a custom email list provider, with more than 1k lists and 3k variants
+            to help you reach your ideal customers on scale.
           </p>
           <p className={callToAction}>
-            Find a list of your ideal customers here.
+            Find your own custom list by searching for your ideal customer here
+          
             <a href="/pages/search">
               <img
-                src="https://www.gatsbyjs.com/deploynow.png"
-                alt="Search"
+                src="/icons/search.jsx"
+                alt="Deploy to Gatsby Cloud"
                 className={deployButton}
               />
             </a>
           </p>
         </>
-      )}
+      
     </div>
   )
 }
@@ -49,27 +50,7 @@ export default function IndexPage({ data }) {
   return (
     <Layout>
       <Hero />
-      <div className={container}>
-      <h1 className={intro}>Welcome to Smokingleads. Your one stop shop for email lists.</h1>
-      {!!process.env.GATSBY_DEMO_STORE && (
-        <>
-          <p className={callOut}>
-            It's a custom email list site, with 1k lists and 3k variants
-            to help you get the contacts you want without breaking the bank.
-          </p>
-          <p className={callToAction}>
-            Find a list of your ideal customers here.
-            <a href="/pages/search">
-              <img
-                src="https://www.gatsbyjs.com/deploynow.png"
-                alt="Search"
-                className={deployButton}
-              />
-            </a>
-          </p>
-        </>
-      )}
-    </div>
+      <ProductListing products={data?.shopifyCollection?.products} />
     </Layout>
   )
 }
