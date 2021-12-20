@@ -12,56 +12,7 @@
   font-size: var(--text-display);
   color: var(--text-color-secondary);
 }
-.search {
-  position: relative;
-  grid-area: search;
-  height: min-content;
-  display: grid;
-  grid-template-columns: auto max-content max-content;
-  align-items: center;
-  padding: var(--space-md) var(--space-md) var(--space-md)
-    var(--size-gutter-raw);
-}
 
-.search input {
-  font-size: var(--text-md);
-  font-weight: var(--medium);
-  grid-area: input;
-  padding-left: var(--space-md);
-  height: var(--size-input);
-  background: none;
-}
-
-.searchForm {
-  display: grid;
-  grid-template-columns: 1fr max-content;
-  grid-template-areas: "input clear";
-  align-items: center;
-  background-color: var(--input-background);
-  border-radius: var(--radius-md);
-  height: var(--size-input);
-  padding: 0 var(--space-md);
-}
-
-.searchIcon {
-  display: none;
-  grid-area: icon;
-  color: var(--text-color-secondary);
-}
-
-.clearSearch {
-  grid-area: clear;
-  border-radius: var(--radius-rounded);
-  color: var(--input-ui);
-  padding: var(--space-sm);
-  display: grid;
-  place-items: center;
-}
-
-.clearSearch:hover {
-  background-color: var(--input-background-hover);
-  color: var(--input-ui-active);
-}
 .callOut {
   padding-bottom: var(--space-lg);
   font-size: var(--text-display);
